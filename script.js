@@ -1,4 +1,6 @@
+
 const searchInput=document.getElementById("myInput");
+var txt="";
 
 var x = document.getElementById("myInput");
 searchInput.addEventListener("search", (event)=>{
@@ -6,10 +8,12 @@ searchInput.addEventListener("search", (event)=>{
   console.log(event.target.value);
 });
 
-searchInput.addEventListener("input", (event)=>{
-    let v=event.target.value;
-  console.log(v);
-     ga('send', 'event', 'myInput', v);
+//INPUT TRACKING
+
+searchInput.addEventListener('input', (event)=>{
+    txt=event.target.value;
+  
+  //ga('send', 'event', 'myInput', input);
 });
 
 
@@ -20,13 +24,33 @@ button.addEventListener("click", ()=>{
   console.log(x.value);
 });
 
-var click=document.getElementById("link2");
-click.addEventListener("click",e=>{
-  let t=e.target;
-  ga('send', {
-    hitType:'event',
-    eventCategory:'click',
-    eventAction: t.href});
-}
+//var t=document.getElementById("linkg").addEventListener("click",myfun(this));
 
-);
+function myfun(e){
+  console.log(txt);
+  var t =e.innerText || e.textContent;
+  console.log(t);
+  var href = e.getAttribute("href");
+   console.log(href);
+
+   dataLayer.push({
+    'userInput': {txt},
+    'linkTitle': {t},
+    'linkUrl': {href}
+});
+  
+
+console.log(dataLayer);
+ 
+ return false;
+//console.log(event.hash);
+//console.log(event.href);
+
+};
+ //sending data to text file
+/*  const fs = require('fs');
+
+ fs.appendFileSync('input.txt', 'txt'); */
+
+
+
