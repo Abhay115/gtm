@@ -34,9 +34,9 @@ function myfun(e){
    console.log(href);
 
    dataLayer.push({
-    'userInput': {txt},
-    'linkTitle': {t},
-    'linkUrl': {href}
+    'userInput': txt,
+    'linkTitle': t,
+    'linkUrl': href
 });
   
 
