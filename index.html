@@ -25,51 +25,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT3NLGL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->  
-    <div>
+   <div>
         <h1>My App</h1>
-        <div>
-            <script async src="https://cse.google.com/cse.js?cx=7a946f1e3a84982ca"></script>
-<div class="gcse-search"></div>
-            </div
-            
-            
-         <br><br><a id="link2" href="page2.html">Go to second page</a><br>
-            
-            
-        <br><a id="link" href="https://www.google.com#google_site">GOOGLE</a><br>
-            <br><a id="link" href="https://www.facebook.com">FACEBOOK</a><br>
-            <br><a id="link" href="https://www.instagram.com">INSTAGRAM</a><br>
-           <br><a id="link" href="https://www.twitter.com">TWITTER</a><br>
-            <ul>
-                <li>Google</li>
-                <li>facebook</li>
-                <li>twitter</li>
-            </ul>
 
-
-  
-    </div>
-        <div>
               <input type="search" id="myInput" placeholder="Search" value="">
             <button type="submit" id="btn"><i class="fa fa-search"></i></button><br>
 
             <br>
-            </div>
-    
-        <script type="text/javascript">
+            <a id="linkg" class="link" href="https://www.google.com#google_site" onclick="myfun(this); return false;">GOOGLE</a><br>
+            
+            <a id="linkf" class="link" href="https://www.facebook.com#Facebook_site" onclick="myfun(this); return false;">FACEBOOK</a><br>
+            <a id="linki" class="link" href="https://www.instagram.com#Instagram_site" onclick="myfun(this); return false;">INSTAGRAM</a><br>
+            <a id="linkt" class="link" href="https://www.twitter.com#Twitter_site" onclick="myfun(this); return false;">TWITTER</a><br>
 
-  var a = document.getElementById("link");
   
-    a.onclick = (event)=> {
-        //ga('send', 'event', 'link','click' )
-       console.log("link clicked");
+    </div>
+    <div>
+        <a id="link2" class="link" href="/page2.html">link 2</a><br>
+    </div>
+    
    
-   const link=document.getElementById("link").hash;
-console.log(link);
-    return false;
-};
-
-</script>
 <script src="script.js"></script>
     
 
