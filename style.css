@@ -1,0 +1,18 @@
+h1{
+    color: rgb(201, 93, 44);
+    margin-left: 40%;
+    margin-bottom: 1%;
+}
+#myInput{
+    color:rgb(58, 26, 26);
+    margin-left: 40%;
+    margin-top: 3%;
+    height: 10%;
+    width: 10%;
+}
+#link{
+    margin-left: 40%;
+}
+div{
+    margin-bottom: 50%;
+}
