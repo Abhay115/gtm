@@ -10,12 +10,6 @@ h1{
     height: 10%;
     width: 10%;
 }
-#link{
-    margin-left: 40%;
-}
-div{
-    margin-bottom: 50%;
-}
 /* unvisited link */
 a:link {
     color: red;
@@ -35,3 +29,10 @@ a:link {
   a:active {
     color: blue;
   }
+#link{
+    margin-left: 40%;
+}
+div{
+    margin-bottom: 50%;
+}
+
